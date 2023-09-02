@@ -1,9 +1,10 @@
 module.exports = {
 	purge: [],
+	darkMode: 'media',
 	content: [
 		// Example content paths...
-		'./**/*.html',
-		'./**/*.{js,jsx,ts,tsx,vue}',
+		'./**/*.{html,js}',
+		'./src/**/*.{js,jsx,ts,tsx,vue}',
 	],
 	theme: {
 		extend: {

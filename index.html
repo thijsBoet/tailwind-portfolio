@@ -7,10 +7,60 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Poppins:wght@300;400;700&display=swap"
     rel="stylesheet">
-    <link rel="stylesheet" href="assets\styles\outputStyles.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            body: '#17171F',
+            'selected-text': '#A3A3FF',
+            theme: '#3F3FFF',
+            nav: '#404053',
+            secondary: '#9191A4',
+            badge: '#3F3F51',
+            'input-border': '#565666',
+            input: '#2A2A35',
+          },
+          fontFamily: {
+            poppins: ["'Poppins'", 'sans-serif'],
+          },
+        },
+      },
+    }
+  </script>
   <title>Matt Boot Personal Web Development Portfolio</title>
 </head>
-<body>
-  
+<body class="bg-body text-white font-poppins pb-12">
+  <header class="py-6">
+    <div class="container flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
+      <div class="text-lg font-bold">Matt.Boot</div>
+      <div class="md:flex hidden space-x-12 items-center">
+        <a href="#" class="text-selected-text">Home</a>
+        <a href="#">My Work</a>
+        <a href="#">Clients</a>
+        <a href="#"><button class="px-6 py-2 bg-theme font-bold">Hire Me</button></a>
+      </div>
+      <div class="md:hidden cursor-pointer">
+        <svg width="26" height="18" viewBox="0 0 26 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M13 17.5H0.25V14.6667H13V17.5ZM25.75 10.4167H0.25V7.58333H25.75V10.4167ZM25.75 3.33333H13V0.5H25.75V3.33333Z"
+            fill="white" />
+        </svg>
+      </div>
+    </div>
+  </header>
+
+  <div class="container mt-16 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
+    <div class="flex flex-wrap md:no-wrap">
+      <nav class="inline-block lg:mr-24 lg:w-4 fixed left-percentage hidden xl:block">
+        <div class="absolute left-50 transform -translate-x-1/2 space-y-6 mt-36">
+          <a href="#" class="nav-dot selected-circle block w-7 h-7 rounded-full border-4 border-nav bg-body">
+            <span class="bg-black px-2 py-1 rounded-md ml-10 opacity-100">Home</span>
+          </a>
+        </div>
+      </nav>
+    </div>
+  </div>
+
 </body>
 </html>
